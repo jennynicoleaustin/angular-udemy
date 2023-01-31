@@ -34,3 +34,31 @@ DataBinding
   - Event Binding ( (event) = "expression" )
 - Combo of both 
   - Two-Way-Binding ( [ (ngModel)] = "data" )
+
+String Interpolation 
+- {{ }}
+  - within the double curly braces you can write a ts expression 
+  - any ts expression that can be resulted into a string at the end. 
+  - You can not write multi line expressions here 
+    - can write a ternary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
