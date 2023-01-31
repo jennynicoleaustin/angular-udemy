@@ -68,6 +68,12 @@ Built in Directives worth using
 - NG if else 
   - #= local reference
 
+Attribute Directives 
+- ngStyle 
+  - [ngStyle]= " { cssStyle: functionToConditionalRenderStyle() } "
+- ngClass
+  - 
+
 
 
 
