@@ -42,7 +42,18 @@ String Interpolation
   - You can not write multi line expressions here 
     - can write a ternary
 
+Property Binding 
+- [ ] = "function"
 
+Which to use? 
+- printing text -> use String interpolation 
+- change property of html element -> property binding
+
+Event binding 
+- Done by adding () to the html element
+  - ( functionGoesHere )
+
+Dollar Sign Event
 
 
 
