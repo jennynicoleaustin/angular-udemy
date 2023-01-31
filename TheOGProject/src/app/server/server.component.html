@@ -1,8 +1,15 @@
 <div>
   <label>Server Name</label>
+<!--  Example of Property Binding -->
+<!--  <input type="text"-->
+<!--         class="form-control"-->
+<!--         (input)="onUpdateServerName($event)"-->
+<!--  >-->
+<!--  Two way Data Binding -->
+<!--  updates the value of server name based on the input value automatically and also updates the input value to the server name if server name is changed elsewhere-->
   <input type="text"
          class="form-control"
-         (input)="onUpdateServerName($event)"
+         [(ngModel)]="serverName"
   >
   <div>{{ serverName }}</div>
   <button
