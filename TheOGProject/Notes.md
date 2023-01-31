@@ -64,7 +64,9 @@ Built in Directives worth using
 - NG if directive
   - must be an expression with a result that is true or false
     - *ngIf 
-      - * means it is a structure directive - meaning it changes the structure of the dom 
+      - *means it is a structure directive - meaning it changes the structure of the dom
+- NG if else 
+  - #= local reference
 
 
 

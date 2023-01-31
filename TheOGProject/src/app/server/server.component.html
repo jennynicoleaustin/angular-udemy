@@ -19,4 +19,7 @@
   </button>
 </div>
 <!--<div>{{ serverCreation }}</div>-->
-<div *ngIf="serverCreated">Server was created, the server name is {{ serverName }}</div>
+<div *ngIf="serverCreated; else noServer">Server was created, the server name is {{ serverName }}</div>
+<ng-template #noServer>
+  <div>No server was created</div>
+</ng-template>
