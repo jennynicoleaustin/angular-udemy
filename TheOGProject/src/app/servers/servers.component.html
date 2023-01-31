@@ -1,0 +1,31 @@
+<div>
+  <label>Server Name</label>
+  <!--  Example of Property Binding -->
+  <!--  <input type="text"-->
+  <!--         class="form-control"-->
+  <!--         (input)="onUpdateServerName($event)"-->
+  <!--  >-->
+  <!--  Two way Data Binding -->
+  <!--  updates the value of server name based on the input value automatically and also updates the input value to the server name if server name is changed elsewhere-->
+  <input type="text"
+         class="form-control"
+         [(ngModel)]="serverName"
+  >
+  <button
+    class="btn btn-dark"
+    [disabled]="!allowNewServer"
+    (click)="onCreateServer()"
+  > Click me
+  </button>
+</div>
+<!--<div>{{ serverCreation }}</div>-->
+<div *ngIf="serverCreated; else noServer">Server was created, the server name is {{ serverName }}</div>
+<ng-template #noServer>
+  <div>No server was created</div>
+</ng-template>
+<div [ngStyle]="{backgroundColor: getColor()}"
+     [ngClass]="{online: serverStatus === 'online'}">
+  {{ getServerStatus() }}</div>
+<app-server
+*ngFor="let server of servers"
+></app-server>
