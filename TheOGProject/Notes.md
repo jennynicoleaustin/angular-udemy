@@ -59,8 +59,12 @@ Directives
 - use @Directive
 - instructions in the DOM 
   - like components (directive with templates )
-  - use attribute style 
-    - 
+
+Built in Directives worth using 
+- NG if directive
+  - must be an expression with a result that is true or false
+    - *ngIf 
+      - * means it is a structure directive - meaning it changes the structure of the dom 
 
 
 

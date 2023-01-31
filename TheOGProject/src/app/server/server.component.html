@@ -18,5 +18,5 @@
   > Click me
   </button>
 </div>
-<div>{{ serverCreation }}</div>
-
+<!--<div>{{ serverCreation }}</div>-->
+<div *ngIf="serverCreated">Server was created, the server name is {{ serverName }}</div>
