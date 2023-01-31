@@ -55,6 +55,13 @@ Event binding
 
 Dollar Sign Event
 
+Directives 
+- use @Directive
+- instructions in the DOM 
+  - like components (directive with templates )
+  - use attribute style 
+    - 
+
 
 
 
