@@ -12,6 +12,25 @@ Making a component
 
 Styling
 - inline
-  - "styles" in the @Component
+  - "styles" in the @Component decorator
 - app.component.css
-- 
+
+Selector (in the @Component decorator)
+- basically works like a css selector
+- if...
+  - selector: '[app-server]'
+  - then that app-server component now is an html attribute that you can add to html elements. 
+- selector: '.app-servers'
+  - recognized as a style added to a html element
+- what doesn't work 
+  - pseudo selectors
+
+DataBinding
+- communication between TS code and template (html)
+- Output Data Options 
+  - String Interpolation ({{ data }})
+  - property binding ( [property] = "data" )
+- React to user events
+  - Event Binding ( (event) = "expression" )
+- Combo of both 
+  - Two-Way-Binding ( [ (ngModel)] = "data" )
