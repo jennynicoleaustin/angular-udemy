@@ -73,6 +73,8 @@ Attribute Directives
   - [ngStyle]= " { cssStyle: functionToConditionalRenderStyle() } "
 - ngClass
   - 
+- ngFor 
+  - similar to a js for loop 
 
 
 
