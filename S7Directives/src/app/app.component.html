@@ -39,6 +39,11 @@
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
       </ng-template>
+
+      <div *appUnless="onlyOdd">
+        Display me conditionally
+      </div>
+
     </div>
   </div>
 </div>
