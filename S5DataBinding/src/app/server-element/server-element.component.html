@@ -1,9 +1,8 @@
 <div class="panel panel-default">
   <div class="panel-heading">{{ element.name }}</div>
   <div class="panel-body">
-    <p>
-      <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
-      <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
-    </p>
+
+    <!--    Directive that serves as a hook to add any content it find between the opening and closing of the element (like propsChildren?)-->
+    <ng-content></ng-content>
   </div>
 </div>

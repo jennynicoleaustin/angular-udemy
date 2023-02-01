@@ -7,12 +7,12 @@ import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@a
 })
 export class LandingComponent implements OnInit {
   // EventEmitter, allows you to create your own events, must give it a type between the <> and () at the end to call its constructor.
-  @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
-  @Output() bluePrintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+  @Output() serverCreated = new EventEmitter<{ serverName: string, serverContent: string }>();
+  @Output() bluePrintCreated = new EventEmitter<{ serverName: string, serverContent: string }>();
   // newServerName = '';
   // newServerContent = '';
   // argument passed inside the view child is the selector; @ViewChild lets you see the local ref inside the html -- should not be used to change the value
-  @ViewChild('nServerContentInput', {static:true}) serverContentInput: ElementRef;
+  @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
 
   constructor() {
   }
@@ -21,16 +21,16 @@ export class LandingComponent implements OnInit {
   }
 
   onAddServer(nameInput: HTMLInputElement) {
-  this.serverCreated.emit({
-    serverName: nameInput.value,
-    serverContent:this.serverContentInput.nativeElement.value
-  });
+    this.serverCreated.emit({
+      serverName: nameInput.value,
+      serverContent: this.serverContentInput.nativeElement.value
+    });
   }
 
   onAddBlueprint(nameInput: HTMLInputElement) {
-   this.bluePrintCreated.emit({
-     serverName: nameInput.value,
-     serverContent: this.serverContentInput.nativeElement.value
-   });
+    this.bluePrintCreated.emit({
+      serverName: nameInput.value,
+      serverContent: this.serverContentInput.nativeElement.value
+    });
   }
 } // Landing Component
