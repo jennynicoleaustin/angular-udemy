@@ -7,18 +7,9 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item d-flex clearfix"
-          *ngFor="let recipe of recipes">
-        <a class="list-group-item-action ms-2 me-auto text-decoration-none">
-          <img
-            [src]="recipe.imagePath"
-            alt="{{ recipe.name }}" class="float-end img-fluid" style="max-height: 200px">
-          <h4 class="">{{ recipe.name }}</h4>
-          <p>{{recipe.description}}</p>
-        </a>
-      </li>
-    </ul>
-<!--    <app-recipe-item></app-recipe-item>-->
+    <app-recipe-item
+      *ngFor="let recipeElement of recipes"
+      [recipe]="recipeElement"
+    ></app-recipe-item>
   </div>
 </div>
