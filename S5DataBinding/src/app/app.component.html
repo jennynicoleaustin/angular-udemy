@@ -1,5 +1,9 @@
 <div class="container">
-  <app-landing></app-landing>
+  <app-landing
+    (serverCreated)="onServerAdded($event)"
+    (bluePrintCreated)="onBlueprintAdded($event)"
+  >
+  </app-landing>
   <hr>
   <div class="row">
     <div class="col-xs-12">
