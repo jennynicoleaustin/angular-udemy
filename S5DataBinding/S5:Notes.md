@@ -35,6 +35,8 @@ By default, all properties of components are only available within that componen
       - called when the projected content has been checked 
     - ngAfterViewInit
       - called after the components view (and child views have been initialized )
+      - value of an element in the dom can only be checked after it has been rendered so here... 
+      - 
     - ngAfterViewChecked
       - called when the view and child views have been checked 
     - ngOnDestroyed
