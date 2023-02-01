@@ -9,7 +9,7 @@ export class LandingComponent implements OnInit {
   // EventEmitter, allows you to create your own events, must give it a type between the <> and () at the end to call its constructor.
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   @Output() bluePrintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
-  newServerName = '';
+  // newServerName = '';
   newServerContent = '';
 
   constructor() {
@@ -18,16 +18,16 @@ export class LandingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onAddServer() {
+  onAddServer(nameInput: HTMLInputElement) {
   this.serverCreated.emit({
-    serverName:this.newServerName,
+    serverName: nameInput.value,
     serverContent:this.newServerContent
   });
   }
 
-  onAddBlueprint() {
+  onAddBlueprint(nameInput: HTMLInputElement) {
    this.bluePrintCreated.emit({
-     serverName: this.newServerName,
+     serverName: nameInput.value,
      serverContent: this.newServerContent
    });
   }
