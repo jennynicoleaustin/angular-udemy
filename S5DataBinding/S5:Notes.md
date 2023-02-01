@@ -17,6 +17,7 @@ By default, all properties of components are only available within that componen
   - Angular goes through a few phases during the creation (and rendering to DOM) process 
     - ngOnChanges 
       - called when a bound input property changes (the properties decorated with @Input)
+      - or when a promise is returned
       - executed when a new component is created & whenever the input changes 
     - ngOnInit
       - called when the component is initialized
