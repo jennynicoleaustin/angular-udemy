@@ -1,6 +1,7 @@
 <ul class="list-group">
   <li class="list-group-item d-flex clearfix">
-    <a class="list-group-item-action ms-2 me-auto text-decoration-none">
+    <a class="list-group-item-action ms-2 me-auto text-decoration-none"
+    (click)="onSelected()">
       <img
         [src]="recipe.imagePath"
         alt="{{ recipe.name }}" class="float-end img-fluid" style="max-height: 200px">
