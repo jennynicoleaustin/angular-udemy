@@ -1,23 +1,35 @@
 <div class="row mt-4">
   <hr>
-  <div class="h2 text-center">Edit Shopping List </div>
+  <div class="h2 text-center">Edit Shopping List</div>
   <div class="col-xs-12">
     <form>
       <div class="row my-3">
         <div class="col-sm-5 form-group">
           <label for="name" class="mb-2">Name</label>
-          <input type="text" id="name" class="form-control">
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            #nameInput
+          >
         </div>
         <div class="col-sm-2 form-group">
           <label for="amount" class="mb-2">Amount</label>
-          <input type="number" id="amount" class="form-control">
+          <input
+            type="number"
+            id="amount"
+            class="form-control"
+            #amountInput
+          >
         </div>
       </div>
       <div class="row my-3">
         <div class="col-xs-12">
-           <button class="btn btn-outline-secondary col-2 me-2" type="submit">Edit</button>
-           <button class="btn btn-outline-info col-2 me-2" type="button">Clear</button>
-           <button class="btn btn-outline-danger col-2" type="button">Delete</button>
+          <button class="btn btn-outline-info col-2 me-2" type="submit"
+          (click)="onAddItem()"
+          >Add</button>
+          <button class="btn btn-outline-secondary col-2 me-2" type="button">Clear</button>
+          <button class="btn btn-outline-danger col-2" type="button">Delete</button>
         </div>
       </div>
     </form>
