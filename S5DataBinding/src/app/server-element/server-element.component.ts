@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, ContentChild, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
@@ -6,7 +6,7 @@ import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core'
   styleUrls: ['./server-element.component.css']
 })
 // Good practice to be sure to implement the hooks class
-export class ServerElementComponent implements OnInit, OnChanges {
+export class ServerElementComponent implements OnInit, OnChanges{
 
   @Input() element: { type: string, name: string, content: string };
 
