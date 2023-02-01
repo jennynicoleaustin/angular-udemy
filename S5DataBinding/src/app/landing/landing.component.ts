@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -10,7 +10,9 @@ export class LandingComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   @Output() bluePrintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   // newServerName = '';
-  newServerContent = '';
+  // newServerContent = '';
+  // argument passed inside the view child is the selector; @ViewChild lets you see the local ref inside the html -- should not be used to change the value
+  @ViewChild('nServerContentInput', {static:true}) serverContentInput: ElementRef;
 
   constructor() {
   }
@@ -21,14 +23,14 @@ export class LandingComponent implements OnInit {
   onAddServer(nameInput: HTMLInputElement) {
   this.serverCreated.emit({
     serverName: nameInput.value,
-    serverContent:this.newServerContent
+    serverContent:this.serverContentInput.nativeElement.value
   });
   }
 
   onAddBlueprint(nameInput: HTMLInputElement) {
    this.bluePrintCreated.emit({
      serverName: nameInput.value,
-     serverContent: this.newServerContent
+     serverContent: this.serverContentInput.nativeElement.value
    });
   }
 } // Landing Component
