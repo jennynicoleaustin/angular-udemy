@@ -29,7 +29,11 @@
       </ul>
 
       <div appHighlight>I am green</div>
-      <div appBetterHighlight>I am orange</div>
+      <div appBetterHighlight
+           defaultColor='yellow'
+           [highlightColor]="'purple'"
+      >I am orange
+      </div>
 
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
