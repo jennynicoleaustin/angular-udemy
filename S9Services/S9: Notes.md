@@ -26,3 +26,5 @@ Potential Considerations with having a single instance of a Service
 
 @Injectable() 
 - Always at to all Services 
+
+Using Services for cross-component communication
