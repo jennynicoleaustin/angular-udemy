@@ -18,3 +18,8 @@ Hierarchical Injector
   - available in all components (not for other services )
 - Single Component 
   - same instance of the service available in that component and all its children. 
+
+Potential Considerations with having a single instance of a Service 
+- Parent component has service injected
+  - children also have same service injected (listed in the provider)
+    - the one in the child will override and be a new instance of the service 
