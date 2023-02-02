@@ -23,3 +23,6 @@ Potential Considerations with having a single instance of a Service
 - Parent component has service injected
   - children also have same service injected (listed in the provider)
     - the one in the child will override and be a new instance of the service 
+
+@Injectable() 
+- Always at to all Services 
