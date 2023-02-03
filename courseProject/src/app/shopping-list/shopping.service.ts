@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 
 @Injectable()
-export class RecipeListService {
+export class ShoppingService {
 
   constructor() {
   }
-} // class RecipeListService
+} // class ShoppingService
