@@ -108,7 +108,12 @@ const appRoutes: Routes  =  [
 
 ## Routing Guards 
 - functionality, logic or code that is executed before a route is loaded or on exit of a route 
-- 
+
+### canActivate Guard 
+- protected routes 
+- property added to the route you want it to apply to 
+  - canActivate: [ allguards you want to be included ]
+  - this gets applied to all children of this route. 
 
 
 
