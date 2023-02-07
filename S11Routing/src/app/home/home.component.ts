@@ -13,9 +13,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  onLoadServers(id: number) {
-    //some method you want to execute before you navigate to a new page.
-    this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowEdit: '1'}, fragment: 'loading'})
-  }
+  // onLoadServers(id: number) {
+  //   //some method you want to execute before you navigate to a new page.
+  //   this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowEdit: '1'}, fragment: 'loading'})
+  // }
 
 }

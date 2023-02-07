@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-import { ServersService } from '../servers.service';
-import {ActivatedRoute, Params} from "@angular/router";
+import {ServersService} from '../servers.service';
+import {ActivatedRoute, Params, Router} from "@angular/router";
 
 @Component({
   selector: 'app-server',
@@ -9,20 +9,27 @@ import {ActivatedRoute, Params} from "@angular/router";
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent implements OnInit {
-  server: {id: number, name: string, status: string};
+  server: { id: number, name: string, status: string };
 
   constructor(private serversService: ServersService,
-              private route:ActivatedRoute) { }
+              private route: ActivatedRoute,
+              private router: Router) {
+  }
 
   ngOnInit() {
     const id = +this.route.snapshot.params['id']
     this.server = this.serversService.getServer(id);
     this.route.params
       .subscribe(
-        (params:Params) => {
+        (params: Params) => {
           this.server = this.serversService.getServer(+params['id'])
         }
       )
+  }
+
+  onEdit() {
+    // Since we are already on the path /server/:id  -> we only need to use the relative route and append 'edit' to the end
+    this.router.navigate(['edit'], {relativeTo:this.route})
   }
 
 }
