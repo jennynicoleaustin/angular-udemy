@@ -78,6 +78,13 @@ const appRoutes: Routes  =  [
 ## Query Parameters
 - [queryParams] = {keyvalue pairs to add}
 
+## Parsing query params 
+- they always come in as a string. so if you are using it to pass as a parameter of a function that expects a number you will need to parse it to num 
+  - adding a + in front of the data will parse it to a number
+
+## Nested Routes
+
+
 
 
 
