@@ -83,7 +83,10 @@ const appRoutes: Routes  =  [
   - adding a + in front of the data will parse it to a number
 
 ## Nested Routes
-
+- a way to nest routes that all start with the same base URL
+- children are indicated through the "children:" value of route.
+  - must specify what router outlet to use
+  - because we want them nested 
 
 
 

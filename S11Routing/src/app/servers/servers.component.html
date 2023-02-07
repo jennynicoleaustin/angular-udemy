@@ -10,12 +10,14 @@
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
+<!--    Used for all child routes of the "servers" route-->
+    <router-outlet></router-outlet>
     <!--    Using routerLink to navigate-->
     <!--    <a routerLink="servers">Reload Page</a>-->
     <!--    using click listener to programmatically navigate-->
-    <button class="btn btn-primary" (click)="onReload()">Reload Servers</button>
-    <app-edit-server></app-edit-server>
-    <hr>
+<!--    <button class="btn btn-primary" (click)="onReload()">Reload Servers</button>-->
+<!--    <app-edit-server></app-edit-server>-->
+<!--    <hr>-->
 <!--    <app-server></app-server>-->
   </div>
 </div>
