@@ -41,8 +41,12 @@ const appRoutes: Routes  =  [
   - To resolve...
     - [routerLinkActiveOptions]="{exact:true}"
 
-
-
+## Navigating Programmatically 
+- No link to use, but you want it to navigate based on a completed action or a button etc. 
+- to use navigation router inside a function 
+  - inject the router as an element in the components constructor
+  - then use.... 
+    - this.router.navigate('pathAsString')
 
 
 
