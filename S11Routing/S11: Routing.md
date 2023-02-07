@@ -70,7 +70,10 @@ const appRoutes: Routes  =  [
   - route might change in the future, so you use an observable to subscribe to an event and listen for changes in that event
 - route.params.subscribe ( takes in 3 functions )
   - whenever the parameter changes 
-    - (params: Parmas)
+
+#### Route Observables
+- are destroyed automatically by angular when the component is destroyed
+  - BUT.... other types of observables are not destroyed automatically. 
 
 
 
