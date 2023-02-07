@@ -75,6 +75,9 @@ const appRoutes: Routes  =  [
 - are destroyed automatically by angular when the component is destroyed
   - BUT.... other types of observables are not destroyed automatically. 
 
+## Query Parameters
+- [queryParams] = {keyvalue pairs to add}
+
 
 
 
