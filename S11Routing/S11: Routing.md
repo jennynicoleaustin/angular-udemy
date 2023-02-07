@@ -102,7 +102,13 @@ const appRoutes: Routes  =  [
 - Add a new file named app-routing.module.ts
   - add the router const
   - import = RouterModule.forRoot(routeName)
-  - export = 
+  - export = RouterModule
+- Inside app.module
+  - import AppRoutingModule
+
+## Routing Guards 
+- functionality, logic or code that is executed before a route is loaded or on exit of a route 
+- 
 
 
 
