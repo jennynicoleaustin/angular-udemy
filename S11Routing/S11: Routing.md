@@ -47,9 +47,15 @@ const appRoutes: Routes  =  [
   - inject the router as an element in the components constructor
   - then use.... 
     - this.router.navigate('pathAsString')
+- Relative path with this.router.navigate
+  - works because the navigate method does not know which path you are currently on 
+- extras: {relativeTo:this.route}
+  - "ActivatedRoute" = the currently activated route
+    - {relativeTo: this.route}
 
-
-
+## Dynamically add parameters to paths in router 
+- 'pathToAddTo/:whatParameterIsNamed
+  - the : (colon) is what tells angular that this is a dynamic parameter.
 
 
 
