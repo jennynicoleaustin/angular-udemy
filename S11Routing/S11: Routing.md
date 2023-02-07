@@ -62,6 +62,15 @@ const appRoutes: Routes  =  [
   - to access the current route in use. 
 - in ngOnInit, you can access the parameter 
   - this.route.snapshot.params['nameOfParam']
+- Snapshot is OK for initial loading of parameter data 
+  - but would not work for subsequent data grabs if the information changes without leaving the page. 
+- for data that changes 
+  - use this.route.params (params is an observable)
+- Observable 
+  - route might change in the future, so you use an observable to subscribe to an event and listen for changes in that event
+- route.params.subscribe ( takes in 3 functions )
+  - whenever the parameter changes 
+    - (params: Parmas)
 
 
 
