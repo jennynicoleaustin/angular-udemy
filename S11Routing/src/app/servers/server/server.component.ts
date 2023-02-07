@@ -29,7 +29,7 @@ export class ServerComponent implements OnInit {
 
   onEdit() {
     // Since we are already on the path /server/:id  -> we only need to use the relative route and append 'edit' to the end
-    this.router.navigate(['edit'], {relativeTo:this.route})
+    this.router.navigate(['edit'], {relativeTo:this.route, queryParamsHandling: 'preserve'})
   }
 
 }

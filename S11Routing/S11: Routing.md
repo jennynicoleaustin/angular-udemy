@@ -88,6 +88,11 @@ const appRoutes: Routes  =  [
   - must specify what router outlet to use
   - because we want them nested 
 
+### Query Params Handling 
+- additional property in "extras" of navigate
+  - takes a string can be...
+    - merge -> merge with any new params we picked up along the way 
+    - preserve -> keep parameters from before 
 
 
 
