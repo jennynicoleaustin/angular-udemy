@@ -57,6 +57,12 @@ const appRoutes: Routes  =  [
 - 'pathToAddTo/:whatParameterIsNamed
   - the : (colon) is what tells angular that this is a dynamic parameter.
 
+### Accessing parameters 
+- in the constructor add route:ActivatedRoute
+  - to access the current route in use. 
+- in ngOnInit, you can access the parameter 
+  - this.route.snapshot.params['nameOfParam']
+
 
 
 
