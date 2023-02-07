@@ -94,6 +94,9 @@ const appRoutes: Routes  =  [
     - merge -> merge with any new params we picked up along the way 
     - preserve -> keep parameters from before 
 
+### Wildcard Routes 
+- must be the very last route in the router
+- { path: '**', redirectTo: '/whereEverYouWantItRedirectedTo' }
 
 
 
