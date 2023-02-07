@@ -22,3 +22,31 @@ const appRoutes: Routes  =  [
     - not best practice 
 - RouterLink, catches the even (click) and prevents the default (reload) and analyzes what we have passed to the routerLink and checks to find a route in router that matches. 
 - html attribute routerLink="/pathYouWant"
+#### Relative vs absolute path
+- (no leading /)
+  - appends the path to the current path you are on (relative to the page you are on)
+    - ie RouterLink="servers" on page localhost:4200/servers = localhost:4200/servers/servers
+- On the main "root" page you can use a relative path, since it only appends to the /
+  - however any other page on our route will require an absolute path if you do not want it appended to the page you are on . 
+- for relative paths. 
+  - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
