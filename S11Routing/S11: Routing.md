@@ -98,6 +98,12 @@ const appRoutes: Routes  =  [
 - must be the very last route in the router
 - { path: '**', redirectTo: '/whereEverYouWantItRedirectedTo' }
 
+### Outsourcing Routes 
+- Add a new file named app-routing.module.ts
+  - add the router const
+  - import = RouterModule.forRoot(routeName)
+  - export = 
+
 
 
 
