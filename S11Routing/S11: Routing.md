@@ -29,9 +29,17 @@ const appRoutes: Routes  =  [
 - On the main "root" page you can use a relative path, since it only appends to the /
   - however any other page on our route will require an absolute path if you do not want it appended to the page you are on . 
 - for relative paths. 
-  - 
+  - you can use relative paths similar to folder structure as well 
 
-
+## Styling Active Links 
+- routerLinkActive 
+  - can be added to the link itself or to the wrapper element. 
+- specify which class you would like to be toggled on when that link is active. 
+  - routerLinkActive="active"
+- by default this attribute will check to see which links use the currently active path and apply that class to ALL links that are active 
+  - meaning by default both the home tab and the clicked users tab would have the active class added. 
+  - To resolve...
+    - [routerLinkActiveOptions]="{exact:true}"
 
 
 
