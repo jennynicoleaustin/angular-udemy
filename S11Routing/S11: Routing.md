@@ -118,6 +118,13 @@ const appRoutes: Routes  =  [
 ### canDeactivate
 - control whether the user is allowed to navigate away from the page
 
+## Location Strategies
+- When an application is hosted on a server the url is always parsed (handled) by the server that is hosting it 
+  - you must configure the server your app is hosted on returns the index.js file instead of a 404 error. 
+- Alternatively you can implement a hash routing 
+  - used for very old browsers 
+  - "hash mode routing" V. 152 "Understanding Location Strategies"
+
 
 
 
