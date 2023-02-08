@@ -115,6 +115,9 @@ const appRoutes: Routes  =  [
   - canActivate: [ allguards you want to be included ]
   - this gets applied to all children of this route. 
 
+### canDeactivate
+- control whether the user is allowed to navigate away from the page
+
 
 
 
